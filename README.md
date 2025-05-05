@@ -12,7 +12,7 @@ For full details on architecture, design decisions, and results, see the report 
 
 ## 2. Dataset Used
 
-Here is the dataset I used.  
+Here is the dataset I used: [NYC DATASET](https://drive.google.com/drive/folders/1eXP7BeyS9-4pOA7n7weqU6-IomX2w4Be?usp=sharing)
 
 **More Info About Dataset**  
 - **Original Data Source**  
