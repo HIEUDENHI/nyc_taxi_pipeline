@@ -1,24 +1,38 @@
+# NYC Taxi Pipeline
 
-# NYC Taxi Data Pipeline: ETL Process
+## 1. Introduction
 
-I'm taking on this project to deepen my understanding of Spark and Hadoop, especially in setting up all components seamlessly with Docker.
+This project implements a complete ETL pipeline for NYC taxi data, addressing both **batch** and **streaming** use-cases with Apache Spark.  
+- **Batch pipeline** Analyze historical taxi-payment data to understand and influence customer payment behavior. By identifying when and how riders pay (credit card vs. cash), we can design targeted fare-discount promotions for credit-card users.  
 
+- **Streaming pipeline** Ingest live taxi‐trip events, compute 15-minute sliding-window pickup counts per zone in real time, and persist results to Cassandra. These real-time metrics enable downstream systems (e.g., dispatch, dynamic pricing) to balance supply and demand.  
 
-## 1. Dataset overview
-
-The dataset includes yellow and green taxi trip records with details on pick-up/drop-off times and locations, trip distances, fares, rate types, payment methods, and passenger counts, provided to NYC’s Taxi and Limousine Commission (TLC) by authorized technology providers.
-
-## 2. Pipeline architecture
-
-![Pipeline architecture](./images/architecture.png "Pipeline architecture")
+For full details on architecture, design decisions, and results, see the report below.
 
 
-## 3 DAGs
+## 2. Dataset Used
 
-![Dashboard](./images/dag.png)
+Here is the dataset I used.  
+
+**More Info About Dataset**  
+- **Original Data Source**  
+  https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page  
+- **Data Dictionary**  
+  https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf  
 
 
+## 3. Report
+
+[Read the Full Report](https://github.com/HIEUDENHI/nyc_taxi_pipeline/blob/main/NYC_Taxi_Pipeline_Report.pdf)
 
 
+## 4. Scripts for Project
 
+1. [Spark Streaming App](https://github.com/HIEUDENHI/nyc_taxi_pipeline/blob/main/mnt/spark/apps/stream_cash_payments.py)  
+
+2. [Airflow DAG: Taxi Pipeline Orchestration](https://github.com/HIEUDENHI/nyc_taxi_pipeline/blob/main/mnt/airflow/dags/taxi_pipeline.py)  
+
+3. [Transform to Silver](https://github.com/HIEUDENHI/nyc_taxi_pipeline/blob/main/mnt/airflow/dags/scripts/transform_to_silver.py)  
+
+4. [Transform to Gold](https://github.com/HIEUDENHI/nyc_taxi_pipeline/blob/main/mnt/airflow/dags/scripts/transform_to_gold.py)  
 
