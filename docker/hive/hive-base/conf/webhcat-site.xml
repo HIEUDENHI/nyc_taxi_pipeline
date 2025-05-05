@@ -1,0 +1,17 @@
+<configuration>
+    <property>
+        <name>templeton.hadoop.security.authentication</name>
+        <value>simple</value>
+        <description>Authentication type for WebHCat: simple, kerberos, or a custom class</description>
+    </property>
+    <property>
+        <name>templeton.hadoop.security.authorization</name>
+        <value>true</value>
+        <description>Enable authorization for WebHCat</description>
+    </property>
+    <property>
+        <name>templeton.port</name>
+        <value>50111</value>
+        <description>Port for WebHCat server</description>
+    </property>
+</configuration>

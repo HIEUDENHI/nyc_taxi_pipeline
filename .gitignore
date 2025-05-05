@@ -1,0 +1,11 @@
+/mnt/kafka/
+/mnt/postgres/
+/mnt/cassandra/
+/mnt/hadoop/
+/mnt/spark/
+/mnt/trino/
+/mnt/zookeeper/
+/mnt/superset/
+/mnt/airflow/logs/
+/generate_data/
+/mnt/bronze_input/
