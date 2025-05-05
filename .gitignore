@@ -2,7 +2,8 @@
 /mnt/postgres/
 /mnt/cassandra/
 /mnt/hadoop/
-/mnt/spark/
+/mnt/spark/data/
+/mnt/spark/tmp/
 /mnt/trino/
 /mnt/zookeeper/
 /mnt/superset/
