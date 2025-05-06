@@ -23,7 +23,7 @@ Here is the dataset I used: [NYC DATASET](https://drive.google.com/drive/folders
 
 ## 3. Report
 
-[Read the Full Report](https://github.com/HIEUDENHI/nyc_taxi_pipeline/blob/main/NYC_Taxi_Pipeline_Report.pdf)
+[Read the Full Report](https://github.com/HIEUDENHI/nyc_taxi_pipeline/blob/main/Report.pdf)
 
 
 ## 4. Scripts for Project
